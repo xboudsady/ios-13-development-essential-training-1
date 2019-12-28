@@ -17,6 +17,9 @@ class ViewController: UIViewController {
         myLabel.text = "Changed with Code!"
     }
 
+    @IBAction func buttonWasPress(_ sender: Any) {
+        myLabel.text = "Button Pressed!"
+    }
 
 }
 
