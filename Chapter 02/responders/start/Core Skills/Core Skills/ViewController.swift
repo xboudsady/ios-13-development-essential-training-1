@@ -16,10 +16,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         myLabel.text = "Changed with Code!"
+        myTextField.becomeFirstResponder()
     }
 
     @IBAction func buttonWasPressed(_ sender: Any) {
         myLabel.text = "Hello \(myTextField.text!)!"
+        myTextField.resignFirstResponder()
     }
     
 }
